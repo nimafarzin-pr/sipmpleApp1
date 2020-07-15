@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/mycolorbackground_two"
+    android:orientation="vertical"
+    android:fitsSystemWindows="false"
+
+    tools:context=".ContentActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:fitsSystemWindows="false"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:animationCache="true"
+            android:fitsSystemWindows="false"
+            android:layout_gravity="center"
+            app:collapsedTitleGravity="center"
+            app:contentScrim="@color/colorPrimary"
+            app:expandedTitleGravity="top|center"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <RelativeLayout
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient"
+
+                >
+
+                <ImageView
+                    android:id="@+id/id_back_contentactivity"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/ic_arrow_forward_black_24dp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/profesorName_ID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/medium_sabnam"
+                        android:text="آلبرت انشتین"
+                        android:textColor="@android:color/white"
+                        android:textSize="26dp" />
+
+                    <TextView
+                        android:id="@+id/field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/profesorName_ID"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/medium_sabnam"
+                        android:gravity="center"
+                        android:text="فیزیک"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appbar"
+
+            >
+
+            <com.poolavarone.book2.TextViewEx
+                android:id="@+id/disc_ID_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/lite_shabnam"
+                android:lineSpacingExtra="5dp"
+                android:text="توضیحات مربوط به هر دانشمند"
+                android:textSize="15sp" />
+        </ScrollView>
+
+    </androidx.core.widget.NestedScrollView>
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/float_actionbutton_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        android:src="@drawable/ic_favorite_border_black_24dp"
+        android:layout_gravity="bottom"
+        app:layout_anchorGravity="bottom|start|end"
+        android:layout_marginRight="10dp"
+        android:longClickable="true"
+        android:contextClickable="true"
+        android:layout_margin="16dp"
+        android:clickable="true"
+
+        />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

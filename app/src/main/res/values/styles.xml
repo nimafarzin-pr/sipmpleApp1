@@ -1,0 +1,24 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+<style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+
+    <item name="android:fontFamily">@font/lite_shabnam</item>
+    <item name="android:textSize">15dp</item>
+
+</style>
+
+<style name="bv" parent="TextAppearance.AppCompat.Widget.Button">
+    <item name="fontFamily">@font/lite_shabnam</item>
+</style>
+
+
+
+</resources>

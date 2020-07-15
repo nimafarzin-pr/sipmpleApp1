@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="colorPrimary">#5b8c5a</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">@android:color/holo_red_dark</color>
+    <color name="mycolor_background">#263238</color>
+    <color name="myclor_shapecolorstartpage">#ff7043</color>
+<color name="mycolorbackground_two">#263238</color>
+
+
+</resources>

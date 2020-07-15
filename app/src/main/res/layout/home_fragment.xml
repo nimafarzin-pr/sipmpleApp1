@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradienttwo"
+    android:id="@+id/root_main_activity_home">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layoutDirection="rtl"
+        app:tabGravity="fill"
+        app:tabIndicatorGravity="bottom"
+        app:tabIndicatorColor="#ff7043"
+        android:id="@+id/tablayout_home"
+        app:tabTextColor="@android:color/white"
+        app:tabTextAppearance="@style/tab_text"
+        android:background="@drawable/gradienttwo">
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <com.duolingo.open.rtlviewpager.RtlViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pager_id"
+        android:layoutDirection="rtl">
+    </com.duolingo.open.rtlviewpager.RtlViewPager>
+
+
+
+    
+
+</LinearLayout>

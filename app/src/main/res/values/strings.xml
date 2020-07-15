@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">book2</string>
+
+
+    <string name="upload">
+
+        <![CDATA[ <!DOCTYPE HTML>
+
+        <html>
+<center>
+             <img src="https://www.eatout.co.za/wp-content/uploads/2017/07/plan-b2.jpg">
+
+</center>
+
+</html>
+        ]]>
+
+
+    </string>
+</resources>

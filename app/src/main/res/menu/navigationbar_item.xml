@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:title="دسته بندی"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+
+        >
+
+    </item>
+    <item
+        android:title="جستجو"
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search_black_24dp">
+
+    </item>
+    <item
+        android:title="علاقه مندی ها"
+        android:id="@+id/person"
+        android:icon="@drawable/favwhite_24dp">
+
+    </item>
+</menu>
+

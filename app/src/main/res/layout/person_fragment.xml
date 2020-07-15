@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_main_activity_person"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradienttwo"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:inputType="textMultiLine|textVisiblePassword"
+            android:backgroundTint="@android:color/white"
+            android:textDirection="rtl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="در علاقه مندی ها جستجو کنید..."
+            android:fontFamily="@font/lite_shabnam"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="15dp"
+            android:padding="15dp"
+            android:drawableStart="@drawable/ic_search_black_24dp"
+            android:background="@android:color/white"
+            android:id="@+id/person_search"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerID_person_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <include layout="@layout/person_background"></include>
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/search_backfav"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/emptypictuer"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@drawable/sad_24dp"
+                />
+
+            <TextView
+                android:id="@+id/emptytexty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emptypictuer"
+                android:fontFamily="@font/lite_shabnam"
+                android:text="موردی یافت نشد."
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+</LinearLayout>

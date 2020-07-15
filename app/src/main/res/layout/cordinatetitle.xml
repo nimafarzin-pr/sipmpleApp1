@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="5dp"
+    android:id="@+id/item_idd"
+    android:gravity="center"
+    android:background="@drawable/gradienttwo">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/item_id"
+        android:gravity="center"
+        android:background="@drawable/item_background"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="آلبرت انیشتین"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/medium_sabnam"
+            android:textSize="16dp"
+            android:id="@+id/name_id"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="فیزیک"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/lite_shabnam"
+            android:textSize="15dp"
+            android:id="@+id/field_id"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
